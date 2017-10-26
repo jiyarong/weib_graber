@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>抓取卡片</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+
+  <body>
+    <h1>Background Color Changer</h1>
+    <div id="container">
+      <input type="button" value="开始抓取" id="grab_start" />
+    </div>
+  </body>
+</html>
